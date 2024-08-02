@@ -1,0 +1,53 @@
+.main,.sidebar ul li, .info, .infoRow1, .infoRow2{
+    width:100%;
+    display: block;
+}
+header{
+    height: 30em;
+    width: 100%;
+}
+div#heroText{
+    scale:0.8;
+    padding-top: 10%;
+    width:80%;
+    margin: auto 10%;
+}
+.sidebar{
+    width:100%;
+    height: 60em;
+    padding: 0;
+    padding-top: 1rem;
+    background-color: lightgreen;
+}
+.sidebar ul{
+    width: 80%;
+    margin: auto 10%;
+}
+.sidebar h2{
+   font-size: x-large;
+}
+.sidebar ul li{
+    display: block;
+    width: 70%;
+}
+.info{
+    margin-top: 34rem;
+}
+.temp{
+    height: 15em;
+}
+
+@media screen and (min-width: 700px){
+    .sidebar{
+        height: 50em;
+    }
+    .sidebar h2{
+        background-size: 10%;
+    }   
+    .sidebar ul li{
+        display: block;
+        width: 80%;
+        padding-left: 8rem;
+    }
+}
+

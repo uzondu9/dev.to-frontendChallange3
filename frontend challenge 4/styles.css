@@ -1,0 +1,139 @@
+*{
+      padding: 0;
+      margin: 0;
+      background-repeat: no-repeat;
+}
+*
+::after,
+::before{
+     box-sizing: border-box;
+}
+:root{
+     --palate1: gold;
+     --palate2: #0ea05c;
+     --palate3: #880712;
+     --palate4: #FFF;
+     --palate5: yellow;
+     --palate6: #0066FF;
+     --palate7: silver;
+}
+body{
+      height: 25em;   
+      font-family: sans-serif;
+      text-align: center;
+      background-color: var(--palate2);
+      transition: 1.5s;
+}
+.main{
+    width:100%;
+    display: flex;
+}
+header{
+      height: calc(0.7 * 25em);
+      width: 70%;
+      background-position: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 1, 0, 0.3)) ,url(images/header.jpg);
+      background-size: cover;
+      opacity: 0.8;
+      font-family: MV Boli;
+}
+div#heroText{
+     width: 50%;
+     margin-left: 30%;
+     padding-top: 3rem;
+}
+header h1{
+     color: var(--palate1);
+}
+header p{
+     color: var(--palate4);
+     padding-top: 1rem;
+     font-size: 1.5rem;
+     font-weight: 1000;
+     width: 110%;
+}
+.sidebar{
+     width:30%;
+     height: 48.5em;
+     padding: 1rem;
+     background-color: lightgreen;
+}
+.sidebar h2{
+     color: var(--palate4);
+     background: #880712 url(images/schedule.png) center left no-repeat;
+     background-size: 15%;
+     padding: 0.5rem;
+     border-radius: 5px;
+     border: 2px inset var(--palate4);
+     font-size: xx-large;
+     font-style: italic;
+     margin: 0.5rem;
+}
+.sidebar p{
+    padding-top: 1.5rem;
+    color: var(--palate4);
+    font-family: MV Boli;
+}
+.sidebar ul{
+    padding-top: 1.5rem;
+}
+.sidebar ul li{
+     display: block;
+     list-style-type: none;
+     margin-top: 3rem;
+     padding: 2rem 2rem 2rem 4rem;
+     border-radius: 8px;
+     color: var(--palate5);
+     background: var(--palate2) url(images/calendar2.png) no-repeat center left;
+     background-size: 15%;
+     font-family: Comic Sans MS;
+     text-align: left;
+     span{
+        padding: 2px;
+        margin-left: 0.75rem;
+        border-radius: 4px;
+        background-color: var(--palate1);
+        color: var(--palate6);
+        text-align: center;
+     }
+}
+.info{
+     width: 68.5%;
+     display: flex;
+     position: relative;
+     bottom: 33.5em;
+     margin-top: 0.5rem;
+}
+.infoRow1, .infoRow2{
+     display: inline-block;
+     width: 50%;
+}
+.temp{
+     padding: 2rem;
+     margin: 0.5rem;
+     height: 12rem;
+     background-color: var(--palate3);
+}
+.temp h2{
+     color: var(--palate4);
+     padding-bottom: 1.25rem;
+     font-family: cursive;
+     background: url(images/cricket.png) center left no-repeat;
+     background-size: 15%;
+}
+.temp p{
+     font-family: Comic Sans MS;
+     color: var(--palate5);
+}
+footer{
+      background-color: var(--palate7);
+      padding: 0.25rem;
+      position: relative;
+      bottom: 33.5rem;
+}
+footer p{
+     font-weight: 600;
+}
+footer p:nth-of-type(2){
+     color: var(--palate2);
+}
